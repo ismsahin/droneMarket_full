@@ -34,7 +34,7 @@ const SonCalismalar = () => {
   return (
     <div className='container mt-5' style={{ height: 550 }}>
       <div className='homepage-carousel-title'>
-        <h3>Find your next "I stayed up too late reading" drone.</h3>
+        <h3>Drone</h3>
       </div>
       <div className='carousel carousel-dark slide mt-5 
                 d-none d-lg-block' data-bs-interval='false'>
@@ -65,12 +65,12 @@ const SonCalismalar = () => {
         <button className='carousel-control-prev' type='button'
         >
           <span className='carousel-control-prev-icon' ></span>
-          <span className='visually-hidden'>Previous</span>
+          <span className='visually-hidden'>Önceki</span>
         </button>
         <button className='carousel-control-next' type='button'
         >
           <span className='carousel-control-next-icon' ></span>
-          <span className='visually-hidden'>Next</span>
+          <span className='visually-hidden'>Sonraki</span>
         </button>
       </div>
 
