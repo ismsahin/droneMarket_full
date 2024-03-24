@@ -8,6 +8,8 @@ import Anasayfa from './anasayfa/Anasayfa'
 import Searchpage from './search/Searchpage'
 import Iletisim from './iletisim/Iletisim'
 import Hesabim from './hesabim/Hesabim'
+import Kaydol from './kayit/Kaydol'
+import Giris from './kayit/Giris'
 
 function App() {
 
@@ -20,6 +22,8 @@ function App() {
           <Route path='searchpage' element={<Searchpage />} />
           <Route path='iletisim' element={<Iletisim />} />
           <Route path='hesabim' element={<Hesabim />} />
+          <Route path='kayitol' element={<Kaydol />} />
+          <Route path='girisyap' element={<Giris />} />
         </Routes>
         <Footer />
       </div>

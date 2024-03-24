@@ -8,51 +8,52 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className='bg-blue-600'>
+    <div className='bg-blue-600 '>
       <footer className="w-full  p-8">
         <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12  text-center md:justify-between">
           <img className='h-32 cursor-pointer ms-14' src={drone_logo}  alt='Drone Market' />
-          <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
-            <li>
+          <ul className="flex flex-wrap items-center gap-y-2 gap-x-8 lg:me-20">
+          <li>
               <Typography
                 as="a"
-                href="#"
+                href="/"
                 color="blue-gray"
-                className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
+                className="font-normal transition-colors hover:text-red-500 focus:text-red-500"
               >
-                About Us
+                Anasayfa
               </Typography>
             </li>
             <li>
               <Typography
                 as="a"
-                href="#"
+                href="/searchpage"
                 color="blue-gray"
-                className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
+                className="font-normal transition-colors hover:text-red-500 focus:text-red-500"
               >
-                License
+                Ürünlerimiz
               </Typography>
             </li>
             <li>
               <Typography
                 as="a"
-                href="#"
+                href="/iletisim"
                 color="blue-gray"
-                className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
+                className="font-normal transition-colors hover:text-red-500 focus:text-red-500"
               >
-                Contribute
+                İletişim
               </Typography>
             </li>
             <li>
               <Typography
                 as="a"
-                href="#"
+                href="/kayitol"
                 color="blue-gray"
-                className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
+                className="font-normal transition-colors hover:text-red-500 focus:text-red-500"
               >
-                Contact Us
+                Aramıza Katıl
               </Typography>
             </li>
+            
           </ul>
         </div>
         <hr className="my-8 border-blue-gray-50" />

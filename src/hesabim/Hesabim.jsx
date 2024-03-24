@@ -2,7 +2,7 @@ import React from 'react'
 
 const Hesabim = () => {
   return (
-    <div>Hesabim</div>
+    <div className='min-h-screen'>Hesabim</div>
   )
 }
 

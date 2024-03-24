@@ -10,7 +10,7 @@ const SonCalismalar = () => {
   useEffect(() => {
     const fetchDrones = async () => {
       try {
-        const baseUrl = new URL('http://localhost:8080/api/drones');
+        const baseUrl = new URL('http://localhost:3306/api/drones');
         const url = `${baseUrl}?page=0&size=9`;
 
         const response = await fetch(url);

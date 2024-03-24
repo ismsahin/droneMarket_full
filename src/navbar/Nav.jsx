@@ -24,14 +24,14 @@ const Nav = () => {
 
 
   const navList = (
-    <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 ">
+    <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 place-items-center">
       <Typography
         as="li"
         variant="medium"
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="/" className="flex items-center hover:text-blue-800 hover:bg-white p-1 px-2 rounded-xl duration-300 text-white">
+        <a href="/" className="flex items-center hover:text-red-800 hover:bg-white p-1 px-2 rounded-xl duration-300 text-white">
           Anasayfa
         </a>
       </Typography>
@@ -41,7 +41,7 @@ const Nav = () => {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="/searchpage" className="flex items-center hover:text-blue-800 hover:bg-white p-1 px-2 rounded-xl duration-300 text-white">
+        <a href="/searchpage" className="flex items-center hover:text-red-800 hover:bg-white p-1 px-2 rounded-xl duration-300 text-white">
           Ürün Arama
         </a>
       </Typography>
@@ -51,7 +51,7 @@ const Nav = () => {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="/iletisim" className="flex items-center hover:text-blue-800 hover:bg-white p-1 px-2 rounded-xl duration-300 text-white">
+        <a href="/iletisim" className="flex items-center hover:text-red-800 hover:bg-white p-1 px-2 rounded-xl duration-300 text-white">
           İletişim
         </a>
       </Typography>
@@ -61,7 +61,7 @@ const Nav = () => {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="/hesabim" className="flex items-center hover:text-blue-800 hover:bg-white p-1 px-2 rounded-xl duration-300 text-white">
+        <a href="/hesabim" className="flex items-center hover:text-red-800 hover:bg-white p-1 px-2 rounded-xl duration-300 text-white">
           Hesabım
         </a>
       </Typography>
@@ -92,14 +92,18 @@ const Nav = () => {
                 size="md"
                 className="hidden lg:inline-block text-black bg-blue-100"
               >
-                <span>Giriş Yap</span>
+                <span><a href="/girisyap" className="">
+                            Giriş Yap
+                        </a></span>
               </Button>
             <Button
               variant="gradient"
               size="md"
               className="hidden lg:inline-block"
             >
-              <span>Kayıt ol</span>
+              <span><a href="/kayitol" className="">
+                            Kayıt Ol
+                        </a></span>
             </Button>
           </div>
           <IconButton
@@ -141,14 +145,18 @@ const Nav = () => {
           </IconButton>
         </div>
       </div>
-      <MobileNav open={openNav}>
+      <MobileNav open={openNav} >
         {navList}
         <div className="flex items-center gap-x-1">
           <Button fullWidth variant="text" size="sm" className="">
-            <span>Giriş yap</span>
+            <span><a href="/girisyap" className="">
+                            Giriş Yap
+                        </a></span>
           </Button>
           <Button fullWidth variant="gradient" size="sm" className="">
-            <span>Kayıt ol</span>
+            <span><a href="/kayitol" className="">
+                            Kayıt Ol
+                        </a></span>
           </Button>
         </div>
       </MobileNav>
