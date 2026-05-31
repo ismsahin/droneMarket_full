@@ -10,6 +10,7 @@
     "preview": "vite preview",
     "start": "npm run dev"
   },
+
   "dependencies": {
     "@heroicons/react": "^2.1.1",
     "@material-tailwind/react": "^2.1.9",
